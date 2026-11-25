@@ -1,0 +1,13 @@
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+
+# Datos: se regeneran con `python src/pipeline.py` (semilla fija)
+data/
+
+# Material de referencia local
+_ref/
+entregables/_build/

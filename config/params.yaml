@@ -1,0 +1,69 @@
+# AURORA SCORE — parámetros del prototipo (Sprint 1 y 2, fases F2 y F3)
+# Datos 100% sintéticos. Caso ficticio con fines académicos.
+
+semilla: 2026
+
+datos:
+  n_poblacion: 60000          # población objetivo de la que se extraen las cohortes
+  n_historico: 30000          # cohorte histórica de entrenamiento (con sesgo de muestra)
+  n_reciente: 12000           # cohorte reciente de validación (representativa)
+  meses_historial: 6          # meses de historia por fuente antes de la solicitud
+  paises: {CL: 0.35, PE: 0.30, CO: 0.20, MX: 0.15}
+  tasa_incumplimiento_objetivo: 0.11
+  # Sesgo de muestra deliberado de la base histórica (factores multiplicativos de inclusión)
+  sesgo_muestra:
+    urbana: 1.0
+    rural: 0.35
+    hombre: 1.0
+    mujer: 0.75
+    edad_25_45: 1.0
+    edad_otro: 0.6
+    edad_60_mas: 0.3
+    mujer_informal: 0.55
+  rezago_horas: {telecom: [24, 48], servicios: [24, 72], marketplace: [24, 72]}
+
+rutas:
+  raw: data/raw
+  processed: data/processed
+  features: data/features
+  modelos: models
+  reportes: reports
+  figuras: reports/figures
+  auditoria: data/audit
+
+split_temporal:
+  # Entrenamiento con solicitudes hasta el mes 9; validación con meses 10-12
+  corte_entrenamiento: "2025-09-30"
+
+modelo:
+  algoritmo: lightgbm
+  params:
+    n_estimators: 400
+    learning_rate: 0.03
+    num_leaves: 31
+    min_child_samples: 60
+    subsample: 0.8
+    subsample_freq: 1
+    colsample_bytree: 0.8
+    reg_lambda: 1.0
+    verbose: -1
+
+decision:
+  # Se aprueba si la probabilidad de incumplimiento (PD) es menor o igual al umbral del país
+  umbral_pd: {CL: 0.13, PE: 0.13, CO: 0.12, MX: 0.12}
+  n_factores_explicacion: 4
+
+equidad:
+  atributos_protegidos: [genero, zona, tramo_edad, sector_laboral]
+  brecha_max_pp: 5.0             # criterio de aceptación del plan (EP3)
+  regla_80: 0.80                 # disparate impact ratio mínimo
+  umbral_correlacion_proxy: 0.35 # variables sobre este valor se eliminan en la mitigación
+
+latencia:
+  n_solicitudes: 2000
+  p95_max_ms: 8000
+  timeout_terceros_ms: 1500
+
+monitoreo:
+  psi_alerta: 0.10
+  psi_critico: 0.25

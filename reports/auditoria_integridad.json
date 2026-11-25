@@ -1,0 +1,11 @@
+{
+  "registros_escritos": 12000,
+  "verificacion_original": {
+    "integro": true,
+    "registros": 12000
+  },
+  "prueba_manipulacion_linea_500": {
+    "integro": false,
+    "primera_linea_alterada": 500
+  }
+}

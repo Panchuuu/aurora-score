@@ -1,0 +1,77 @@
+{
+  "psi_score_total": 0.0029,
+  "ks_score_total": 0.0129,
+  "variables_por_estado": {
+    "estable": 43
+  },
+  "top_drift": [
+    {
+      "variable": "datos_gb_medio",
+      "psi": 0.0212,
+      "ks": 0.059,
+      "estado": "estable"
+    },
+    {
+      "variable": "antiguedad_linea_meses",
+      "psi": 0.0172,
+      "ks": 0.0575,
+      "estado": "estable"
+    },
+    {
+      "variable": "monto_servicios_medio",
+      "psi": 0.0164,
+      "ks": 0.0427,
+      "estado": "estable"
+    },
+    {
+      "variable": "meses_servicios",
+      "psi": 0.0162,
+      "ks": 0.053,
+      "estado": "estable"
+    },
+    {
+      "variable": "n_fuentes_con_datos",
+      "psi": 0.0134,
+      "ks": 0.0479,
+      "estado": "estable"
+    },
+    {
+      "variable": "monto_recargas_medio",
+      "psi": 0.0132,
+      "ks": 0.0473,
+      "estado": "estable"
+    },
+    {
+      "variable": "ticket_medio",
+      "psi": 0.0121,
+      "ks": 0.0396,
+      "estado": "estable"
+    },
+    {
+      "variable": "cuota_sobre_recarga",
+      "psi": 0.0097,
+      "ks": 0.038,
+      "estado": "estable"
+    }
+  ],
+  "score_mensual": [
+    {
+      "mes": "2025-10",
+      "psi_score": 0.0047,
+      "estado": "estable",
+      "tasa_aprobacion": 0.7494
+    },
+    {
+      "mes": "2025-11",
+      "psi_score": 0.004,
+      "estado": "estable",
+      "tasa_aprobacion": 0.7478
+    },
+    {
+      "mes": "2025-12",
+      "psi_score": 0.0055,
+      "estado": "estable",
+      "tasa_aprobacion": 0.7456
+    }
+  ]
+}

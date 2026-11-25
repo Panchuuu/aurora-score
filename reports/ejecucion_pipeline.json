@@ -1,0 +1,56 @@
+{
+  "fecha": "2026-11-25T14:18:51",
+  "pasos": [
+    {
+      "paso": "generate_data",
+      "descripcion": "Generación de datos sintéticos (6 fuentes)",
+      "segundos": 5.4
+    },
+    {
+      "paso": "ingest",
+      "descripcion": "Ingesta, rezagos y resolución de identidad",
+      "segundos": 5.0
+    },
+    {
+      "paso": "features",
+      "descripcion": "Feature store precalculado",
+      "segundos": 20.8
+    },
+    {
+      "paso": "train",
+      "descripcion": "Entrenamiento v1/v2, mitigación y ablación",
+      "segundos": 9.9
+    },
+    {
+      "paso": "explain",
+      "descripcion": "Explicabilidad TreeSHAP de rechazos",
+      "segundos": 2.6
+    },
+    {
+      "paso": "fairness",
+      "descripcion": "Auditoría de equidad",
+      "segundos": 0.1
+    },
+    {
+      "paso": "monitor",
+      "descripcion": "Monitoreo de drift (PSI/KS)",
+      "segundos": 0.4
+    },
+    {
+      "paso": "latency",
+      "descripcion": "Benchmark de latencia (RNF-01)",
+      "segundos": 26.1
+    },
+    {
+      "paso": "audit_log",
+      "descripcion": "Registro de auditoría inmutable",
+      "segundos": 4.7
+    },
+    {
+      "paso": "figuras",
+      "descripcion": "Gráficos para informe y presentación",
+      "segundos": 2.2
+    }
+  ],
+  "segundos_total": 77.2
+}

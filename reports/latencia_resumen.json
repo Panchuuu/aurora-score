@@ -1,0 +1,39 @@
+{
+  "n_solicitudes": 2000,
+  "p50_ms": 984.9,
+  "p95_ms": 1815.7,
+  "p99_ms": 1965.9,
+  "max_ms": 2422.3,
+  "limite_p95_ms": 8000,
+  "cumple_rnf01": true,
+  "holgura_p95_ms": 6184.3,
+  "pct_timeout_terceros": 6.95,
+  "p95_por_componente_ms": {
+    "1_recepcion": 260.47,
+    "2_identidad": 0.02,
+    "3_feature_store": 155.75,
+    "4_variables_al_vuelo": 1.44,
+    "5_terceros": 1500.0,
+    "6_inferencia": 5.04,
+    "7_reglas": 0.13,
+    "8_shap": 5.69,
+    "9_respuesta": 267.99
+  },
+  "medio_por_componente_ms": {
+    "1_recepcion": 132.2,
+    "2_identidad": 0.01,
+    "3_feature_store": 71.09,
+    "4_variables_al_vuelo": 1.37,
+    "5_terceros": 720.86,
+    "6_inferencia": 4.81,
+    "7_reglas": 0.12,
+    "8_shap": 5.53,
+    "9_respuesta": 133.98
+  },
+  "componentes_simulados": [
+    "red_entrada",
+    "io_feature_store",
+    "terceros",
+    "red_salida"
+  ]
+}

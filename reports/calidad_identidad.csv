@@ -1,0 +1,8 @@
+fuente,llave,filas,enlazadas,tasa_enlace,invalidas
+telecom_lineas,numero_movil,42000,42000,1.0,0
+telecom_actividad,numero_movil,234824,234824,1.0,0
+servicios,rut_dni_titular,484419,477347,0.9854,1844
+marketplace,email_sha256,154193,154193,1.0,0
+app_metadatos,solicitud_id,42000,42000,1.0,0
+redes_optin,solicitud_id,21987,21987,1.0,0
+biometria,solicitud_id,42000,42000,1.0,0

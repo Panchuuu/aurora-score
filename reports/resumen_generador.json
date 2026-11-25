@@ -1,0 +1,119 @@
+{
+  "n_solicitudes": 42000,
+  "por_cohorte": {
+    "historica": 30000,
+    "reciente": 12000
+  },
+  "filas_por_fuente": {
+    "solicitudes": 42000,
+    "telecom_lineas": 42000,
+    "telecom_actividad": 234824,
+    "servicios": 484419,
+    "marketplace": 154193,
+    "app_metadatos": 42000,
+    "redes_optin": 21987,
+    "biometria": 42000
+  },
+  "tasa_incumplio_real": 0.1091,
+  "tasa_incumplio_registrado": 0.1637,
+  "composicion": {
+    "zona": {
+      "historica": {
+        "urbana": 0.903,
+        "rural": 0.097
+      },
+      "reciente": {
+        "urbana": 0.818,
+        "rural": 0.182
+      }
+    },
+    "genero": {
+      "historica": {
+        "M": 0.59,
+        "F": 0.41
+      },
+      "reciente": {
+        "M": 0.502,
+        "F": 0.498
+      }
+    },
+    "tramo_edad": {
+      "historica": {
+        "25-45": 0.619,
+        "46-59": 0.228,
+        "18-24": 0.113,
+        "60+": 0.04
+      },
+      "reciente": {
+        "25-45": 0.518,
+        "46-59": 0.262,
+        "18-24": 0.139,
+        "60+": 0.081
+      }
+    },
+    "sector_laboral": {
+      "historica": {
+        "formal": 0.59,
+        "informal": 0.41
+      },
+      "reciente": {
+        "formal": 0.524,
+        "informal": 0.476
+      }
+    },
+    "pais": {
+      "historica": {
+        "CL": 0.364,
+        "PE": 0.29,
+        "CO": 0.199,
+        "MX": 0.147
+      },
+      "reciente": {
+        "CL": 0.346,
+        "PE": 0.299,
+        "CO": 0.208,
+        "MX": 0.146
+      }
+    }
+  },
+  "incumplio_real_por_grupo": {
+    "zona": {
+      "rural": 0.1119,
+      "urbana": 0.1088
+    },
+    "genero": {
+      "F": 0.1113,
+      "M": 0.1075
+    },
+    "tramo_edad": {
+      "18-24": 0.1109,
+      "25-45": 0.1081,
+      "46-59": 0.1107,
+      "60+": 0.1097
+    },
+    "sector_laboral": {
+      "formal": 0.11,
+      "informal": 0.108
+    }
+  },
+  "incumplio_registrado_por_grupo": {
+    "zona": {
+      "rural": 0.2154,
+      "urbana": 0.1565
+    },
+    "genero": {
+      "F": 0.17,
+      "M": 0.1588
+    },
+    "tramo_edad": {
+      "18-24": 0.1648,
+      "25-45": 0.1624,
+      "46-59": 0.1622,
+      "60+": 0.1822
+    },
+    "sector_laboral": {
+      "formal": 0.1525,
+      "informal": 0.1785
+    }
+  }
+}

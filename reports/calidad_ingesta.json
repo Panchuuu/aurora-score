@@ -1,0 +1,83 @@
+{
+  "identidad": [
+    {
+      "fuente": "telecom_lineas",
+      "llave": "numero_movil",
+      "filas": 42000,
+      "enlazadas": 42000,
+      "tasa_enlace": 1.0,
+      "invalidas": 0
+    },
+    {
+      "fuente": "telecom_actividad",
+      "llave": "numero_movil",
+      "filas": 234824,
+      "enlazadas": 234824,
+      "tasa_enlace": 1.0,
+      "invalidas": 0
+    },
+    {
+      "fuente": "servicios",
+      "llave": "rut_dni_titular",
+      "filas": 484419,
+      "enlazadas": 477347,
+      "tasa_enlace": 0.9854,
+      "invalidas": 1844
+    },
+    {
+      "fuente": "marketplace",
+      "llave": "email_sha256",
+      "filas": 154193,
+      "enlazadas": 154193,
+      "tasa_enlace": 1.0,
+      "invalidas": 0
+    },
+    {
+      "fuente": "app_metadatos",
+      "llave": "solicitud_id",
+      "filas": 42000,
+      "enlazadas": 42000,
+      "tasa_enlace": 1.0,
+      "invalidas": 0
+    },
+    {
+      "fuente": "redes_optin",
+      "llave": "solicitud_id",
+      "filas": 21987,
+      "enlazadas": 21987,
+      "tasa_enlace": 1.0,
+      "invalidas": 0
+    },
+    {
+      "fuente": "biometria",
+      "llave": "solicitud_id",
+      "filas": 42000,
+      "enlazadas": 42000,
+      "tasa_enlace": 1.0,
+      "invalidas": 0
+    }
+  ],
+  "rezago": [
+    {
+      "fuente": "telecom_actividad",
+      "filas_enlazadas": 234824,
+      "no_disponibles_por_rezago": 2123,
+      "pct_no_disponible": 0.9,
+      "rezago_medio_h": 36.0
+    },
+    {
+      "fuente": "servicios",
+      "filas_enlazadas": 477347,
+      "no_disponibles_por_rezago": 5937,
+      "pct_no_disponible": 1.24,
+      "rezago_medio_h": 48.0
+    },
+    {
+      "fuente": "marketplace",
+      "filas_enlazadas": 154193,
+      "no_disponibles_por_rezago": 1791,
+      "pct_no_disponible": 1.16,
+      "rezago_medio_h": 48.0
+    }
+  ]
+}

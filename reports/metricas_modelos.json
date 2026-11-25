@@ -1,0 +1,257 @@
+{
+  "n_train": 30000,
+  "n_test": 12000,
+  "periodo_train": [
+    "2025-01-01",
+    "2025-09-29"
+  ],
+  "periodo_test": [
+    "2025-10-01",
+    "2025-12-30"
+  ],
+  "proxies_eliminadas": [
+    "comuna_antena"
+  ],
+  "modelos": {
+    "v1-base": {
+      "etiqueta_entrenamiento": "incumplio_registrado",
+      "auc_test_real": 0.7448,
+      "ks_test_real": 0.3327,
+      "auc_test_registrada": 0.7684,
+      "auc_train": 0.8259,
+      "tasa_aprobacion": 0.4435,
+      "mora_aprobados": 0.0419,
+      "mora_rechazados": 0.1661,
+      "matriz_confusion": {
+        "rechaza_y_incumple": 1109,
+        "rechaza_y_paga": 5569,
+        "aprueba_e_incumple": 223,
+        "aprueba_y_paga": 5099
+      },
+      "curva_ganancia": [
+        {
+          "pct_poblacion": 0.0,
+          "pct_incumplidores_capturados": 0.0
+        },
+        {
+          "pct_poblacion": 0.05,
+          "pct_incumplidores_capturados": 0.214
+        },
+        {
+          "pct_poblacion": 0.1,
+          "pct_incumplidores_capturados": 0.3303
+        },
+        {
+          "pct_poblacion": 0.15,
+          "pct_incumplidores_capturados": 0.4174
+        },
+        {
+          "pct_poblacion": 0.2,
+          "pct_incumplidores_capturados": 0.485
+        },
+        {
+          "pct_poblacion": 0.25,
+          "pct_incumplidores_capturados": 0.5345
+        },
+        {
+          "pct_poblacion": 0.3,
+          "pct_incumplidores_capturados": 0.5901
+        },
+        {
+          "pct_poblacion": 0.35,
+          "pct_incumplidores_capturados": 0.6441
+        },
+        {
+          "pct_poblacion": 0.4,
+          "pct_incumplidores_capturados": 0.6884
+        },
+        {
+          "pct_poblacion": 0.45,
+          "pct_incumplidores_capturados": 0.7387
+        },
+        {
+          "pct_poblacion": 0.5,
+          "pct_incumplidores_capturados": 0.786
+        },
+        {
+          "pct_poblacion": 0.55,
+          "pct_incumplidores_capturados": 0.8296
+        },
+        {
+          "pct_poblacion": 0.6,
+          "pct_incumplidores_capturados": 0.8604
+        },
+        {
+          "pct_poblacion": 0.65,
+          "pct_incumplidores_capturados": 0.9024
+        },
+        {
+          "pct_poblacion": 0.7,
+          "pct_incumplidores_capturados": 0.9287
+        },
+        {
+          "pct_poblacion": 0.75,
+          "pct_incumplidores_capturados": 0.9482
+        },
+        {
+          "pct_poblacion": 0.8,
+          "pct_incumplidores_capturados": 0.967
+        },
+        {
+          "pct_poblacion": 0.85,
+          "pct_incumplidores_capturados": 0.9805
+        },
+        {
+          "pct_poblacion": 0.9,
+          "pct_incumplidores_capturados": 0.9887
+        },
+        {
+          "pct_poblacion": 0.95,
+          "pct_incumplidores_capturados": 0.9947
+        },
+        {
+          "pct_poblacion": 1.0,
+          "pct_incumplidores_capturados": 1.0
+        }
+      ],
+      "sha256": "024dd5243c8946ce41251a5276609a23f53288535bb140652b00e69c4dda6542"
+    },
+    "v2-mitigado": {
+      "etiqueta_entrenamiento": "incumplio",
+      "auc_test_real": 0.8085,
+      "ks_test_real": 0.4782,
+      "auc_test_registrada": 0.7133,
+      "auc_train": 0.8378,
+      "tasa_aprobacion": 0.7476,
+      "mora_aprobados": 0.0524,
+      "mora_rechazados": 0.2846,
+      "matriz_confusion": {
+        "rechaza_y_incumple": 862,
+        "rechaza_y_paga": 2167,
+        "aprueba_e_incumple": 470,
+        "aprueba_y_paga": 8501
+      },
+      "curva_ganancia": [
+        {
+          "pct_poblacion": 0.0,
+          "pct_incumplidores_capturados": 0.0
+        },
+        {
+          "pct_poblacion": 0.05,
+          "pct_incumplidores_capturados": 0.2282
+        },
+        {
+          "pct_poblacion": 0.1,
+          "pct_incumplidores_capturados": 0.3761
+        },
+        {
+          "pct_poblacion": 0.15,
+          "pct_incumplidores_capturados": 0.4857
+        },
+        {
+          "pct_poblacion": 0.2,
+          "pct_incumplidores_capturados": 0.5691
+        },
+        {
+          "pct_poblacion": 0.25,
+          "pct_incumplidores_capturados": 0.6419
+        },
+        {
+          "pct_poblacion": 0.3,
+          "pct_incumplidores_capturados": 0.705
+        },
+        {
+          "pct_poblacion": 0.35,
+          "pct_incumplidores_capturados": 0.774
+        },
+        {
+          "pct_poblacion": 0.4,
+          "pct_incumplidores_capturados": 0.8161
+        },
+        {
+          "pct_poblacion": 0.45,
+          "pct_incumplidores_capturados": 0.8491
+        },
+        {
+          "pct_poblacion": 0.5,
+          "pct_incumplidores_capturados": 0.8814
+        },
+        {
+          "pct_poblacion": 0.55,
+          "pct_incumplidores_capturados": 0.8979
+        },
+        {
+          "pct_poblacion": 0.6,
+          "pct_incumplidores_capturados": 0.9174
+        },
+        {
+          "pct_poblacion": 0.65,
+          "pct_incumplidores_capturados": 0.9354
+        },
+        {
+          "pct_poblacion": 0.7,
+          "pct_incumplidores_capturados": 0.9505
+        },
+        {
+          "pct_poblacion": 0.75,
+          "pct_incumplidores_capturados": 0.9677
+        },
+        {
+          "pct_poblacion": 0.8,
+          "pct_incumplidores_capturados": 0.9805
+        },
+        {
+          "pct_poblacion": 0.85,
+          "pct_incumplidores_capturados": 0.985
+        },
+        {
+          "pct_poblacion": 0.9,
+          "pct_incumplidores_capturados": 0.991
+        },
+        {
+          "pct_poblacion": 0.95,
+          "pct_incumplidores_capturados": 0.9962
+        },
+        {
+          "pct_poblacion": 1.0,
+          "pct_incumplidores_capturados": 1.0
+        }
+      ],
+      "sha256": "3d3fe1b192eeb225bd78714b1ad85693d2f982250197852c1a273c13fb74533b"
+    }
+  },
+  "ablacion": [
+    {
+      "paso": "0. Base (v1)",
+      "auc_test_real": 0.7448,
+      "brecha_max_pp": 13.53,
+      "atributo_peor": "zona",
+      "dir_min": 0.825,
+      "cumple": false
+    },
+    {
+      "paso": "1. + conciliación de atraso y mora",
+      "auc_test_real": 0.8031,
+      "brecha_max_pp": 1.34,
+      "atributo_peor": "tramo_edad",
+      "dir_min": 0.982,
+      "cumple": true
+    },
+    {
+      "paso": "2. + eliminación de proxies",
+      "auc_test_real": 0.8074,
+      "brecha_max_pp": 1.98,
+      "atributo_peor": "tramo_edad",
+      "dir_min": 0.974,
+      "cumple": true
+    },
+    {
+      "paso": "3. + reponderación y cobertura (v2)",
+      "auc_test_real": 0.8085,
+      "brecha_max_pp": 1.49,
+      "atributo_peor": "tramo_edad",
+      "dir_min": 0.98,
+      "cumple": true
+    }
+  ]
+}

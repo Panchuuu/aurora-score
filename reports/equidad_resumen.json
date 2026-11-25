@@ -1,0 +1,212 @@
+{
+  "v1-base": {
+    "veredicto": {
+      "brecha_max_pp": 22.3,
+      "atributo_peor": "zona",
+      "dir_min": 0.539,
+      "cumple_5pp": false,
+      "cumple_80": false,
+      "aprobado": false
+    },
+    "inclusion": {
+      "pct_aprobados_subrepresentados": 32.41,
+      "pct_solicitantes_subrepresentados": 42.17,
+      "tasa_aprobacion_subrepresentados": 34.09,
+      "tasa_aprobacion_resto": 51.83
+    },
+    "brechas": [
+      {
+        "atributo": "genero",
+        "grupo_min": "F",
+        "aprob_min": 0.4304,
+        "grupo_max": "M",
+        "aprob_max": 0.4565,
+        "brecha_aprobacion_pp": 2.6157,
+        "brecha_tpr_pp": 2.9941,
+        "disparate_impact": 0.9427,
+        "cumple_5pp": true,
+        "cumple_80": true
+      },
+      {
+        "atributo": "zona",
+        "grupo_min": "rural",
+        "aprob_min": 0.2612,
+        "grupo_max": "urbana",
+        "aprob_max": 0.4842,
+        "brecha_aprobacion_pp": 22.3013,
+        "brecha_tpr_pp": 24.3305,
+        "disparate_impact": 0.5394,
+        "cumple_5pp": false,
+        "cumple_80": false
+      },
+      {
+        "atributo": "tramo_edad",
+        "grupo_min": "60+",
+        "aprob_min": 0.308,
+        "grupo_max": "18-24",
+        "aprob_max": 0.4622,
+        "brecha_aprobacion_pp": 15.4222,
+        "brecha_tpr_pp": 16.566,
+        "disparate_impact": 0.6664,
+        "cumple_5pp": false,
+        "cumple_80": false
+      },
+      {
+        "atributo": "sector_laboral",
+        "grupo_min": "informal",
+        "aprob_min": 0.3802,
+        "grupo_max": "formal",
+        "aprob_max": 0.501,
+        "brecha_aprobacion_pp": 12.0785,
+        "brecha_tpr_pp": 13.7013,
+        "disparate_impact": 0.7589,
+        "cumple_5pp": false,
+        "cumple_80": false
+      }
+    ]
+  },
+  "v1-base (mismo volumen que v2)": {
+    "veredicto": {
+      "brecha_max_pp": 13.53,
+      "atributo_peor": "zona",
+      "dir_min": 0.825,
+      "cumple_5pp": false,
+      "cumple_80": true,
+      "aprobado": false
+    },
+    "inclusion": {
+      "pct_aprobados_subrepresentados": 39.16,
+      "pct_solicitantes_subrepresentados": 42.17,
+      "tasa_aprobacion_subrepresentados": 69.43,
+      "tasa_aprobacion_resto": 78.65
+    },
+    "brechas": [
+      {
+        "atributo": "genero",
+        "grupo_min": "F",
+        "aprob_min": 0.7432,
+        "grupo_max": "M",
+        "aprob_max": 0.7519,
+        "brecha_aprobacion_pp": 0.8688,
+        "brecha_tpr_pp": 1.3861,
+        "disparate_impact": 0.9884,
+        "cumple_5pp": true,
+        "cumple_80": true
+      },
+      {
+        "atributo": "zona",
+        "grupo_min": "rural",
+        "aprob_min": 0.637,
+        "grupo_max": "urbana",
+        "aprob_max": 0.7723,
+        "brecha_aprobacion_pp": 13.5287,
+        "brecha_tpr_pp": 13.9234,
+        "disparate_impact": 0.8248,
+        "cumple_5pp": false,
+        "cumple_80": true
+      },
+      {
+        "atributo": "tramo_edad",
+        "grupo_min": "60+",
+        "aprob_min": 0.691,
+        "grupo_max": "25-45",
+        "aprob_max": 0.7591,
+        "brecha_aprobacion_pp": 6.8172,
+        "brecha_tpr_pp": 7.024,
+        "disparate_impact": 0.9102,
+        "cumple_5pp": false,
+        "cumple_80": true
+      },
+      {
+        "atributo": "sector_laboral",
+        "grupo_min": "informal",
+        "aprob_min": 0.7134,
+        "grupo_max": "formal",
+        "aprob_max": 0.7786,
+        "brecha_aprobacion_pp": 6.5223,
+        "brecha_tpr_pp": 7.2743,
+        "disparate_impact": 0.9162,
+        "cumple_5pp": false,
+        "cumple_80": true
+      }
+    ]
+  },
+  "v2-mitigado": {
+    "veredicto": {
+      "brecha_max_pp": 1.49,
+      "atributo_peor": "tramo_edad",
+      "dir_min": 0.98,
+      "cumple_5pp": true,
+      "cumple_80": true,
+      "aprobado": true
+    },
+    "inclusion": {
+      "pct_aprobados_subrepresentados": 42.38,
+      "pct_solicitantes_subrepresentados": 42.17,
+      "tasa_aprobacion_subrepresentados": 75.14,
+      "tasa_aprobacion_resto": 74.48
+    },
+    "brechas": [
+      {
+        "atributo": "genero",
+        "grupo_min": "M",
+        "aprob_min": 0.7444,
+        "grupo_max": "F",
+        "aprob_max": 0.7508,
+        "brecha_aprobacion_pp": 0.6313,
+        "brecha_tpr_pp": 0.1968,
+        "disparate_impact": 0.9916,
+        "cumple_5pp": true,
+        "cumple_80": true
+      },
+      {
+        "atributo": "zona",
+        "grupo_min": "urbana",
+        "aprob_min": 0.7463,
+        "grupo_max": "rural",
+        "aprob_max": 0.7534,
+        "brecha_aprobacion_pp": 0.7145,
+        "brecha_tpr_pp": 0.1822,
+        "disparate_impact": 0.9905,
+        "cumple_5pp": true,
+        "cumple_80": true
+      },
+      {
+        "atributo": "tramo_edad",
+        "grupo_min": "46-59",
+        "aprob_min": 0.7369,
+        "grupo_max": "18-24",
+        "aprob_max": 0.7518,
+        "brecha_aprobacion_pp": 1.4906,
+        "brecha_tpr_pp": 1.0749,
+        "disparate_impact": 0.9802,
+        "cumple_5pp": true,
+        "cumple_80": true
+      },
+      {
+        "atributo": "sector_laboral",
+        "grupo_min": "informal",
+        "aprob_min": 0.7467,
+        "grupo_max": "formal",
+        "aprob_max": 0.7484,
+        "brecha_aprobacion_pp": 0.1739,
+        "brecha_tpr_pp": 0.3922,
+        "disparate_impact": 0.9977,
+        "cumple_5pp": true,
+        "cumple_80": true
+      }
+    ]
+  },
+  "falla_biometrica_primer_intento": {
+    "tramo_edad": {
+      "18-24": 4.92,
+      "25-45": 5.04,
+      "46-59": 5.75,
+      "60+": 12.11
+    },
+    "sector_laboral": {
+      "formal": 3.5,
+      "informal": 8.3
+    }
+  }
+}

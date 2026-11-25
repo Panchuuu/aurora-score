@@ -9,7 +9,7 @@ Fuente única: `docs/tareas.csv`. Este documento se regenera con `python src/ges
 | Sprint | Tarjetas | Hechas | Est. (h) | Real (h) | Desviación de esfuerzo |
 |---|---:|---:|---:|---:|---:|
 | S1 | 9 | 9 | 38 | 44 | +15,8 % |
-| S2 | 14 | 14 | 50 | 60 | +20,0 % |
+| S2 | 14 | 14 | 50 | 61 | +22,0 % |
 
 ## Avance por paquete de la WBS (sobre las tarjetas de este corte)
 
@@ -36,7 +36,7 @@ Fuente única: `docs/tareas.csv`. Este documento se regenera con `python src/ges
 | AUR-08 | Notebook 02 · ingeniería de variables | 4.1 | Oscar | 3 | 3 | Hecho | — |
 | AUR-09 | Reporte de estado Sprint 1 | 1.2 | Francisco | 2 | 2 | Hecho | — |
 | AUR-10 | Modelo base LightGBM con split temporal | 4.2 | Francisco | 5 | 7 | Hecho | +2 h (+40 %) D4 |
-| AUR-11 | Versionado de modelos con hash | 4.2 | Oscar | 2 | 2 | Hecho | — |
+| AUR-11 | Versionado de modelos con hash | 4.2 | Oscar | 2 | 3 | Hecho | +1 h (+50 %) D8 |
 | AUR-12 | Motor de decisión con umbrales por país | 5.2 | Oscar | 3 | 3 | Hecho | — |
 | AUR-13 | Explicabilidad TreeSHAP en lenguaje natural | 4.4 | Francisco | 5 | 6 | Hecho | +1 h (+20 %) |
 | AUR-14 | Auditoría de equidad | 2.4 | Oscar | 4 | 4 | Hecho | — |

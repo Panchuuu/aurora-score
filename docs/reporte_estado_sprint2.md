@@ -2,7 +2,7 @@
 
 **Proyecto:** AURORA SCORE · Vertex Financial Group · **Período:** 17-11 al 28-11-2026 · **Corte del plan:** M4–M8
 **Preparado por:** Francisco Gaete, Oscar Oreste (consultores externos) · **Estado general:** 🟢 Verde en
-calidad y 🟡 amarillo en esfuerzo (+20,0 %)
+calidad y 🟡 amarillo en esfuerzo (+22,0 %)
 
 > Prototipo con datos sintéticos que reproducen la estructura y los sesgos del caso.
 
@@ -14,7 +14,7 @@ calidad y 🟡 amarillo en esfuerzo (+20,0 %)
 | 4.0 Modelo analítico | 8 | 7 | 88 % (AUR-24 replanificada a S3) |
 | 5.0 Motor de decisión y agentes | 2 | 2 | 100 % |
 | 6.0 Despliegue y expansión | 3 | 3 | 100 % |
-| **Total Sprint 2** | **14 + 1 en backlog** | **14** | 50 h estimadas, 60 h reales |
+| **Total Sprint 2** | **14 + 1 en backlog** | **14** | 50 h estimadas, 61 h reales |
 
 ## 2. Resultados (cohorte de prueba de octubre a diciembre de 2025, 12.000 solicitudes)
 | Indicador | v1-base | v2-mitigado | Criterio |
@@ -40,6 +40,7 @@ calidad y 🟡 amarillo en esfuerzo (+20,0 %)
 - **D5:** sesgo de medición no previsto; se agregó AUR-22 por control de cambios (+4 h).
 - **D6:** herramienta de PDF no disponible (+1 h).
 - **D7:** *reject inference* replanificado al Sprint 3.
+- **D8:** el hash del modelo no coincidía en un clon limpio por la normalización de fin de línea de git. Corregido.
 
 ## 5. Riesgos de la matriz RP
 | Riesgo | Situación |

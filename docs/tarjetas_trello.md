@@ -143,8 +143,9 @@ Cada tarjeta traza a un paquete de la WBS del EP3 y a un requerimiento (RF/RNF).
 - **Paquete WBS:** 4.2 Entrenamiento y validación
 - **Requerimiento:** RNF-09
 - **Responsable:** Oscar Oreste
-- **Estimación:** 2 h · **Real:** 2 h
-- **Etiquetas:** S2, WBS 4.2
+- **Estimación:** 2 h · **Real:** 3 h
+- **Etiquetas:** S2, WBS 4.2, Desviación
+- **Desviación:** D8 (ver docs/desviaciones.md)
 - **Evidencia:** `models/registro_modelos.json`
 - **Checklist:** [x] código en el repositorio · [x] resultado en reports/ · [x] revisado por el otro integrante
 

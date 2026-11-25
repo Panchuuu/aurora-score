@@ -13,6 +13,7 @@ ocurrió, la causa, el impacto, la acción correctiva y su estado. Las cifras sa
 | D5 | S2 | AUR-22 | Sesgo de medición no previsto en el backlog: la mora registrada (16,4 %) no es la real (10,9 %) | +4 h no planificadas | Cerrada |
 | D6 | S2 | AUR-21 | La herramienta prevista para generar el PDF (wkhtmltopdf) no estaba disponible | +1 h | Cerrada |
 | D7 | S2 | AUR-24 | *Reject inference* planificado en F3 no se ejecutó en el Sprint 2 | Replanificada a S3 | Abierta |
+| D8 | S2 | AUR-11 | Al clonar el repositorio, el hash del modelo no coincidía con el registrado | +1 h | Cerrada |
 
 ---
 
@@ -81,6 +82,16 @@ ocurrió, la causa, el impacto, la acción correctiva y su estado. Las cifras sa
   a H2. Afecta a H3, previsto para M8, que tiene holgura.
 - **Acción:** la tarjeta AUR-24 pasa al Sprint 3 con 5 h estimadas. Queda declarada como limitación en la
   model card.
+
+## D8 · El hash del modelo no coincidía en un clon limpio
+- **Planificado:** que el motor de decisión verifique el SHA-256 del modelo antes de cargarlo (RNF-09).
+- **Ocurrido:** al clonar el repositorio publicado, el archivo del modelo v2 tenía otro hash
+  (`aec9…` en vez de `3d3f…`). Por diseño, el motor se negó a cargarlo.
+- **Causa:** LightGBM escribe en Windows una línea con fin `\r\n` dentro de un archivo con fines `\n`, y git
+  normalizó ese fin de línea al guardarlo. El control funcionó: detectó un modelo alterado, aunque la
+  alteración fuera involuntaria.
+- **Acción correctiva:** `.gitattributes` marca `models/**` como binario y los modelos se volvieron a guardar
+  byte a byte. Se verificó en un clon nuevo que ambos hashes coinciden con el registro.
 
 ---
 
